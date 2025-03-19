@@ -1,3 +1,3 @@
 <x-guestLayout>
-    TecnoCenter@gmail.com
+    Tecnocenterlojaa@gmail.com
 </x-guestLayout>
