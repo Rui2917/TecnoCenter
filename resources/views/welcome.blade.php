@@ -2,258 +2,127 @@
     <div class="lg:flex">
         <div class="bg-[#A0C1B9] lg:w-1/4">
     
-        <button id="dropdownDefaultButtonCores" data-dropdown-toggle="dropdownCores"class="border block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent  md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Cores</a>
-<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-</svg>
-</button>
 
-<!-- Dropdown menu -->
-<div id="dropdownCores" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700">
-    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButtonCores">
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Preto</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Branco</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Vermelho</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Azul</a>
-      </li>
-    </ul>
-</div>
+<label>Cor:
+    <select id="cor">
+      <option value="">Qualquer</option>
+      <option value="preto">Preto</option>
+      <option value="branco">Branco</option>
+      <option value="azul">Azul</option>
+      <option value="Vermelho">Vermelho</option>
+    </select>
+  </label>
+  <br>
 
-        </li>
-        <button id="dropdownDefaultButtonAno" data-dropdown-toggle="dropdownAno"class="border block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Ano</a>
-<path stroke="currentAno" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-</svg>
-</button>
-
-<!-- Dropdown menu -->
-<div id="dropdownAno" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700">
-    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButtonAno">
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">2025</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">2024</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">2023</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">2022</a>
-      </li>
-    </ul>
-</div>
-
-        </li>
+<label>Ano:
+    <select id="ano">
+      <option value="">Qualquer</option>
+      <option value="2025">2025</option>
+      <option value="2024">2024</option>
+      <option value="2023">2023</option>
+      <option value="2022">2022</option>
+      <option value="2021">2021</option>
+      <option value="2020">2020</option>
+    </select>
+  </label>
+  <br>
 
 
-        <button id="dropdownDefaultButtonPreco" data-dropdown-toggle="dropdownPreco"class="border block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Preço</a>
-<path stroke="currentPreco" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-</svg>
-</button>
+  
+  <label>Preço:
+<input type="number" id="preco" placeholder="Ex: 950€" max="1200">
+</label>
+<br>
 
-<!-- Dropdown menu -->
-<div id="dropdownPreco" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700">
-    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButtonPreco">
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">De 0€/ 150€</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">De 150€/ 300€</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">De 300€/ 450€</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">De 450€/ 600€</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">De 600€/ 850€</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">De 850€/ 1050€</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">De 1050€/ 1200€</a>
-      </li>
-    </ul>
-</div>
+<label>RAM:
+    <select id="ram">
+      <option value="">Qualquer</option>
+      <option value="4">4 GB</option>
+      <option value="6">6 GB</option>
+      <option value="8">8 GB</option>
+    </select>
+  </label>
+  <br>
+
+            <label>Memória Interna:
+    <select id="memoria">
+      <option value="">Qualquer</option>
+      <option value="64">64 GB</option>
+      <option value="128">128 GB</option>
+      <option value="256">256 GB</option>
+      <option value="512">512 GB</option>
+      <option value="1">1 TB</option>
+    </select>
+  </label>
+  <br>
 
         </li>
+        <label>Características:
+    <select id="caracteristicas">
+      <option value="">Qualquer</option>
+      <option value="agua">Resistente à Água</option>
+      <option value="carregamento">Carregamento Rápido</option>
+      <option value="nfc">NFC</option>
+      <option value="usb">USB Tipo C</option>
+    </select>
+  </label>
+  <br>
 
-
-                <button id="dropdownDefaultButtonRam" data-dropdown-toggle="dropdownRam"class="border block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Ram</a>
-<path stroke="currentRam" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-</svg>
-</button>
-
-<!-- Dropdown menu -->
-<div id="dropdownRam" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700">
-    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButtonRam">
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Até 512 MB </a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">1 GB</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">2 GB</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">3 GB</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">4 GB</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">6 GB</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">8 GB</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">12 GB</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">16 GB</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">18 GB</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">32 GB</a>
-      </li>
-    </ul>
-</div>
-
-        </li>
-
-        <button id="dropdownDefaultButtonProcessador" data-dropdown-toggle="dropdownProcessador"class="border block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Processador</a>
-<path stroke="currentProcessador" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-</svg>
-</button>
-
-<!-- Dropdown menu -->
-<div id="dropdownProcessador" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700">
-    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButtonProcessador">
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Apple</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Samsung Exynos</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">SnapDrogan</a>
-      </li>
-    </ul>
-</div>
-
-        </li>
-
-            </button>
-
-            <button id="dropdownDefaultButtonMemoria" data-dropdown-toggle="dropdownMemoria"class="border block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Memória Interna</a>
-<path stroke="currentMemoria" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-</svg>
-</button>
-
-<!-- Dropdown menu -->
-<div id="dropdownMemoria" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700">
-    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButtonMemoria">
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Até 4 GB </a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">16 GB</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">32 GB</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">64 GB</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">128 GB</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">256 GB</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">512 GB</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">1 TB</a>
-      </li>
-    </ul>
-</div>
-
-        </li>
-        <button id="dropdownDefaultButtonCaracteristicas" data-dropdown-toggle="dropdownCaracteristicas"class="border block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Caracteristicas</a>
-<path stroke="currentCaracteristicas" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-</svg>
-</button>
-
-<!-- Dropdown menu -->
-<div id="dropdownCaracteristicas" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700">
-    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButtonCaracteristicas">
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">NFC</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Resistenete à água</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Carregamento sem fio</a>
-      </li>
-    </ul>
-</div>
-
-        </li>
-
-            </button>
             
             
-            <button id="dropdownDefaultButtonConectividade" data-dropdown-toggle="dropdownConectividade"class="border block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Conectividade</a>
-<path stroke="currentConectividade" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-</svg>
-</button>
+            <label>Conectividade:
+    <select id="conectividade">
+      <option value="">Qualquer</option>
+      <option value="2g">2G</option>
+      <option value="3g">3G</option>
+      <option value="4g">4G</option>
+      <option value="5g">5G</option>
+      
+    </select>
+  </label>
+  <br>
 
-<!-- Dropdown menu -->
-<div id="dropdownConectividade" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700">
-    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButtonConectividade">
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">2 G</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">3 G</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">4 G</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">5 G</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Bluetooth</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">USB Tipo C</a>
-      </li>
-    </ul>
-</div>
+        <button onclick="filtrar()">Filtrar</button>
+    <br>   
 
-        </li>
+  <script>
+    function filtrar() {
+      const cor = document.getElementById("cor").value;
+      const ano = document.getElementById("ano").value;
+      const precoMax = parseFloat(document.getElementById("preco").value);
+      const ram = document.getElementById("ram").value;
+      const memoria = document.getElementById("memoria").value;
+      const caracteristicas = document.getElementById("caracteristicas").value;
+      const conectividade = document.getElementById("conectividade").value;
 
-            </button>
-            <p class="border p-2 border-[#515B3A] rounded m-1">Filtrar</p>
-        </div>
-        <div class="bg-white-400 lg:w-3/4">
+      const itens = document.querySelectorAll("#lista li");
 
-        </div>
-    </div>    
+      itens.forEach(function(item) {
+        const corItem = item.getAttribute("data-cor");
+        const anoItem = item.getAttribute("data-ano");
+        const precoItem = parseFloat(item.getAttribute("data-preco"));
+        const ramItem = item.getAttribute("data-ram");
+        const memoriaItem = item.getAttribute("data-memoria");
+        const caracteristicasItem = item.getAttribute("data-caracteristicas");
+        const conectividadeItem = item.getAttribute("data-conectividade");
+
+        const corOk = !cor || corItem === cor;
+        const anoOk = !ano || anoItem === ano;
+        const precoOk = isNaN(precoMax) || precoItem <= precoMax;
+        const ramOk = !ram || ramItem === ram;
+        const memoriaOk = !memoria || memoriaItem === memoria;
+        const caracteristicasOk = !caracteristicas || caracteristicasItem === caracteristicas;
+        const conectividadeOk = !conectividade || conectividadeItem === conectividade;
+
+        if (corOk && anoOk && precoOk && ramOk && memoriaOk && caracteristicasOk && conectividadeOk) {
+          item.style.display = "";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    }
+  </script>
+
+
+
 </x-guestLayout>
