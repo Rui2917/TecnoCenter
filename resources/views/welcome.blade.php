@@ -1,7 +1,11 @@
 <x-guestLayout>
     <div class="lg:flex">
         <div class="bg-[#A0C1B9] lg:w-1/4">
-    
+    <video autoplay loop muted playsinline width="100%">
+      <source src="/videos/iphone16promax.gif" type="video/gif">
+    </video>
+      Your browser does not support the video tag.
+    </video>
 
 <label>Cor:
     <select id="cor">
