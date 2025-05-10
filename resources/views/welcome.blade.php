@@ -1,11 +1,7 @@
 <x-guestLayout>
     <div class="lg:flex">
         <div class="bg-[#A0C1B9] lg:w-1/4">
-    <video autoplay loop muted playsinline width="100%">
-      <source src="/videos/iphone16promax.gif" type="video/gif">
-    </video>
-      Your browser does not support the video tag.
-    </video>
+
 
 <label>Cor:
     <select id="cor">
@@ -32,7 +28,7 @@
   <br>
 
 
-  
+
   <label>Preço:
 <input type="number" id="preco" placeholder="Ex: 950€" max="1200">
 </label>
@@ -40,10 +36,12 @@
 
 <label>RAM:
     <select id="ram">
-      <option value="">Qualquer</option>
-      <option value="4">4 GB</option>
-      <option value="6">6 GB</option>
-      <option value="8">8 GB</option>
+        <option value="">Qualquer</option>
+        <option value="4">4 GB</option>
+        <option value="6">6 GB</option>
+        <option value="8">8 GB</option>
+        <option value="12">12 GB</option>
+        <option value="16">16 GB</option>
     </select>
   </label>
   <br>
@@ -68,12 +66,13 @@
       <option value="carregamento">Carregamento Rápido</option>
       <option value="nfc">NFC</option>
       <option value="usb">USB Tipo C</option>
+      <option value="usb-lightning">USB tipo lightning</option>
     </select>
   </label>
   <br>
 
-            
-            
+
+
             <label>Conectividade:
     <select id="conectividade">
       <option value="">Qualquer</option>
@@ -81,13 +80,13 @@
       <option value="3g">3G</option>
       <option value="4g">4G</option>
       <option value="5g">5G</option>
-      
+
     </select>
   </label>
   <br>
 
         <button onclick="filtrar()">Filtrar</button>
-    <br>   
+    <br>
 
   <script>
     function filtrar() {
