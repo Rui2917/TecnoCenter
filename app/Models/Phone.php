@@ -5,15 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Phones extends Model
+class Phone extends Model
 {
     use HasFactory;
 
     protected $fillable = [
         'brand',
+        'path',
         'model',
         'price',
-        'image_path', // Add this field
+        'image',
         'features',
     ];
 }

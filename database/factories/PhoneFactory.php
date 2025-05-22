@@ -17,7 +17,9 @@ class PhoneWebsiteFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'phone_number' => $this->faker->phoneNumber,
+            'website' => $this->faker->url,
+            // Add other fields as needed based on your PhoneWebsite model
         ];
     }
 }

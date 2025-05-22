@@ -10,7 +10,7 @@ class CreatePhonesTable extends Migration
     {
         Schema::create('phones', function (Blueprint $table) {
             $table->id();
-            $table->string('image_path');
+            $table->string('path');
             $table->string('brand');
             $table->string('model');
             $table->decimal('price', 10, 2);

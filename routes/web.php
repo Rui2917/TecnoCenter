@@ -1,8 +1,7 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
-use App\Models\Phones;
+use App\Models\Phone;
 
 Route::get('/', function () {
     return view('welcome');
@@ -30,45 +29,48 @@ Route::get('/contatos', function () {
     return view('contatos');
 });
 
+
 Route::post('/phones/store', function (Request $request) {
     $request->validate([
-        'image' => 'required|mimes:jpeg,png,jpg,gif,svg|max:2048',
         'brand' => 'required',
+        'image' => 'required|mimes:jpeg,png,jpg,gif,svg|max:2048',
         'model' => 'required',
-        'price' => 'required|numeric',
+        'price' => 'nullable',
         'features' => 'required',
-        'release_date' => 'nullable|date',
     ]);
 
-    if ($request->hasFile('image') && $request->file('image')->isValid()) {
-        $imageName = time() . "." . $request->image->extension();
-        $request->image->storeAs('phone_images', $imageName, 'public');
-    } else {
-        return back()->withErrors(['image' => 'Invalid image file.']);
-    }
+    $imageName = time() . "." . $request->image->extension();
+    $request->image->move(public_path('img2'), $imageName);
 
-    Phones::create([
-        'image_path' => $imageName,
+    Phone::create([
         'brand' => $request->input('brand'),
+        'path' => $imageName,
         'model' => $request->input('model'),
         'price' => $request->input('price'),
         'features' => $request->input('features'),
-        'release_date' => $request->input('release_date'),
-    ]);
+]);
 
     return redirect()->route('phones.index');
 });
+
 
 Route::get('/phones/create', function () {
     return view('phones.create');
 });
 
 Route::get('/phones/{id}', function ($id) {
-    $phone = Phones::find($id);
+    $phone = Phone::find($id);
     return view('phones.show', ['phone' => $phone]);
 });
-
+Route::delete('/phones/{id}', function ($id) {
+    $phone = Phone::findOrFail($id);
+    if ($phone->path && file_exists(public_path('img2/' . $phone->path))) {
+        unlink(public_path('img2/' . $phone->path));
+    }
+    $phone->delete();
+    return redirect()->route('phones.index')->with('success', 'Phone deleted successfully.');
+})->name('phones.destroy');
 Route::get('/phones', function () {
-    $phones = Phones::all();
+    $phones = Phone::all();
     return view('phones.index', ['phones' => $phones]);
 })->name('phones.index');
