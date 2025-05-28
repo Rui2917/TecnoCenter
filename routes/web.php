@@ -4,7 +4,8 @@ use Illuminate\Http\Request;
 use App\Models\Phone;
 
 Route::get('/', function () {
-    return view('welcome');
+    $phones = Phone::all();
+    return view('phones.index', ['phones' => $phones]);
 });
 
 Route::middleware([
