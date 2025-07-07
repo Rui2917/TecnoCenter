@@ -42,6 +42,15 @@
       <li>
         <a href="#" class="block px-4 py-2 dark:hover:bg-gray-600 dark:hover:text-white">Xiaomi</a>
       </li>
+       <li>
+        <a href="#" class="block px-4 py-2 dark:hover:bg-gray-600 dark:hover:text-white">Oppo</a>
+      </li>
+       <li>
+        <a href="#" class="block px-4 py-2 dark:hover:bg-gray-600 dark:hover:text-white">Ulefone</a>
+      </li>
+      <li>
+        <a href="#" class="block px-4 py-2 dark:hover:bg-gray-600 dark:hover:text-white">Realme</a>
+      </li>
     </ul>
 </div>
 
@@ -63,6 +72,3 @@
     </div>
   </div>
 </nav>
-
-
-<!-- teste -->

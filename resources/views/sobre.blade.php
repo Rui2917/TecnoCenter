@@ -14,7 +14,7 @@
                 O que podes encontrar na TecnoCenter?
             </h2>
             <ul class="list-disc list-inside text-gray-700 mb-6">
-                <li>Smartphones de última geração: As melhores marcas e modelos do mercado, incluindo Apple, Samsung, Xiaomi, Huawei, e muito mais.</li>
+                <li>Smartphones de última geração: As melhores marcas e modelos do mercado, incluindo Apple, Samsung, Xiaomi e Huawei,  com designs inovadores e alto desempenho,tudo o que precisa para tirar o máximo da tecnologia móvel.</li>
                 <li>Acessórios: Capas, protectores de ecrã, carregadores, fones e outros acessórios essenciais para complementar o teu dispositivo.</li>
                 <li>Assistência técnica: Serviço especializado de reparação e manutenção para garantir que o teu telemóvel funciona sempre como novo.</li>
             </ul>
@@ -23,6 +23,10 @@
             </p>
             <p class="text-center text-blue-600 font-bold text-xl">
                 TecnoCenter – Tecnologia ao teu alcance.
+                 <p class="text-gray-600 text-center mt-4">
+               <a href="{{ url('/phones') }}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">
+                    Voltar à lista de telemóveis
+</a>
             </p>
         </div>
     </div>

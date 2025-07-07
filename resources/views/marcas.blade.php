@@ -3,4 +3,7 @@
     Iphone
     Huawei
     Xiaomi
+    Oppo
+    Ulefone
+    Realme
 </x-guestLayout>
