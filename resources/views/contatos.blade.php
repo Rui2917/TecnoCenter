@@ -7,15 +7,21 @@
                 <a href="mailto:Tecnocenterlojaa@gmail.com?subject=Hello%20Tecnocenter&body=I%20would%20like%20to%20contact%20you." class="text-blue-500 hover:underline">
                     Tecnocenterlojaa@gmail.com
 </a>
-                    <br>Number:
+                    <br> Number:
                     <a href="tel:+351 934946303" class="text-blue-500 hover:underline">
                         +351 934946303
                 </a>
             </p>
-            <p class="text-gray-600 text-center mt-4">
+            Siga-nos no instagram:
+                <a href="https://www.instagram.com/tecnocenterlojaa/" class="text-blue-500 hover:underline">
+                Tecnocenterlojaa
+</a>
+</p>
+ <p class="text-gray-600 text-center mt-4">
                <a href="{{ url('/phones') }}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">
                     Voltar à lista de telemóveis
 </a>
+</p>
         </div>
     </div>
 </x-guestLayout>
