@@ -19,7 +19,7 @@
         @livewireStyles
     </head>
     <body>
-        <x-menu/>
+        <x-header/>
         <div class="font-sans text-gray-900 antialiased">
             {{ $slot }}
         </div>

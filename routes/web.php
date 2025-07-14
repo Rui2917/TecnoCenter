@@ -75,3 +75,7 @@ Route::get('/phones', function () {
     $phones = Phone::all();
     return view('phones.index', ['phones' => $phones]);
 })->name('phones.index');
+
+Route::get('/carrinho', function () {
+    return view('carrinho');
+});

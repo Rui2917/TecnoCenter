@@ -13,13 +13,23 @@
             <h1 class="text-center">Preço: {{ $phone->price ?? 'Sem preço' }}</h1>
             <h1 class="text-center">Especificações: {{ $phone->features ?? 'Sem especificações' }}</h1>
         </a>
-        <a href="/phones" class="bg-red-400 p-4 rounded mt-4">Voltar</a>
-        <form action="{{ route('phones.destroy', $phone->id) }}" method="POST" onsubmit="return confirm('Tem certeza que deseja excluir este telefone?');" class="mt-4">
-            @csrf
-            @method('DELETE')
-            <button type="submit" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition-colors">
-                Excluir
-            </button>
+        <div class="flex flex-row space-x-4 mt-4">
+            <form action="#" method="POST">
+                <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition-colors">
+                    comprar
+                </button>
+            </form>
+            <a href="/phones" class="bg-red-400 text-white px-4 py-2 rounded hover:bg-red-500 transition-colors flex items-center">
+                Voltar
+            </a>
+            <form action="{{ route('phones.destroy', $phone->id) }}" method="POST" onsubmit="return confirm('Tem certeza que deseja excluir este telefone?');">
+                @csrf
+                @method('DELETE')
+                <button type="submit" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition-colors">
+                    Excluir
+                </button>
+            </form>
+        </div>
         </form>
     </div>
 </x-guest-layout>
