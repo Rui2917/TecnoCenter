@@ -2,6 +2,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Models\Phone;
+use App\Http\Controllers\PhoneController;
 
 Route::get('/', function () {
     $phones = Phone::all();
@@ -75,3 +76,5 @@ Route::get('/phones', function () {
     $phones = Phone::all();
     return view('phones.index', ['phones' => $phones]);
 })->name('phones.index');
+
+Route::get('/phones', [PhoneController::class, 'index']);

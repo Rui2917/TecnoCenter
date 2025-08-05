@@ -23,11 +23,7 @@
             </p>
             <p class="text-center text-blue-600 font-bold text-xl">
                 TecnoCenter – Tecnologia ao teu alcance.
-                 <p class="text-gray-600 text-center mt-4">
-               <a href="{{ url('/phones') }}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">
-                    Voltar à lista de telemóveis
-</a>
-            </p>
+</p>
         </div>
     </div>
 </x-guestLayout>

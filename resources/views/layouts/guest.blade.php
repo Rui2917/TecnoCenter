@@ -19,12 +19,12 @@
         @livewireStyles
     </head>
     <body>
-        <x-menu/>
+        <x-header/>
         <div class="font-sans text-gray-900 antialiased">
             {{ $slot }}
         </div>
         <script src="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.js"></script>
-
+        <x-footer/>
         @livewireScripts
     </body>
 </html>

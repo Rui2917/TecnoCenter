@@ -17,4 +17,18 @@ class Phone extends Model
         'image',
         'path',
     ];
+    
+    public function index(Request $request)
+{
+    $letter = $request->input('letter');
+    $phones = Phone::query();
+
+    if ($letter) {
+        $phones->where('brand', 'LIKE', $letter . '%');
+    }
+
+    $phones = $phones->get();
+
+    return view('phones.index', compact('phones'));
+}
 }
