@@ -77,10 +77,8 @@ Route::get('/phones', function () {
     return view('phones.index', ['phones' => $phones]);
 })->name('phones.index');
 
-<<<<<<< HEAD
 Route::get('/phones', [PhoneController::class, 'index']);
-=======
+
 Route::get('/carrinho', function () {
     return view('carrinho');
 });
->>>>>>> b64bb50e01358182c255bb6cc4161ee1d653e083
