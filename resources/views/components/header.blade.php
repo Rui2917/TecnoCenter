@@ -40,13 +40,13 @@
           </script>
         </li>
         <li>
-          <a href="/contatos" class="block py-2 px-3 rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white dark:text-blue-950 dark:hover:bg-white md:hover:text-blue-700 md:dark:hover:bg-transparent">Contatos</a>
+          <a href="/contatos" class="block py-2 px-3 rounded-sm md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  dark:text-blue-950 dark:hover:bg-white md:hover:text-blue-700 md:dark:hover:bg-transparent">Contatos</a>
         </li>
         <li>
-          <a href="/carrinho" class="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white dark:text-blue-950 dark:hover:bg-gray-700 md:hover:text-blue-700 md:dark:hover:bg-transparent">Carrinho</a>
+          <a href="/carrinho" class="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  dark:text-blue-950 dark:hover:bg-gray-700 md:hover:text-blue-700 md:dark:hover:bg-transparent">Carrinho</a>
         </li>
         <li>
-          <a href="/login" class="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white dark:text-blue-950 dark:hover:bg-gray-700 md:hover:text-blue-700 md:dark:hover:bg-transparent">Login/Registar</a>
+          <a href="/login" class="block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-blue-950 dark:hover:bg-gray-700 md:hover:text-blue-700 md:dark:hover:bg-transparent">Login/Registar</a>
         </li>
       </ul>
     </div>

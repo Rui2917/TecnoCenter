@@ -4,18 +4,20 @@
     <!-- Filter Form -->
     <form method="GET" action="{{ url('/phones') }}" class="max-w-md mx-auto mb-8 flex">
         <select name="letter" class="flex-1 border rounded-l px-4 py-2" onchange="this.form.submit()">
-            <option value="">Todas as letras</option>
-            @foreach (range('A', 'Z') as $char)
-                <option value="{{ $char }}" {{ request('letter') == $char ? 'selected' : '' }}>
-                    {{ $char }}
-                </option>
-            @endforeach
+            <option value="">Todas as marcas</option>
+            <option value="Apple">Apple</option>
+            <option value="Samsung">Samsung</option>
+            <option value="Xiaomi">Xiaomi</option>
+            <option value="Huawei">Huawei</option>
+            <option value="Ulefone">Ulefone</option>
+            <option value="Oppo">Oppo</option>
+            <option value="Realme">Realme</option>
         </select>
         <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-r">Filtrar</button>
     </form>
 
     <div class="grid grid-cols-4 gap-4 max-w-4xl mx-auto my-8">
-        @forelse ($phones as $phone)
+        @foreach ($phones as $phone)
             <div class="border rounded shadow hover:shadow-lg transition">
                 <a href="{{ url('/phones/' . $phone->id) }}">
                     <img 
@@ -30,12 +32,7 @@
                     </div>
                 </a>
             </div>
-        @empty
-            <p class="col-span-4 text-center text-gray-500">Nenhum telemóvel encontrado.</p>
-        @endforelse
+        @endforeach
     </div>
-
-    <div class="text-center m-8">
-        <a href="{{ url('/phones/create') }}" class="bg-red-400 p-4 rounded text-white">Adicionar Telemóvel</a>
-    </div>
+    
 </x-guest-layout>
